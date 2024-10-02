@@ -1,19 +1,19 @@
-﻿/****************************
+/****************************
  *  Автор:      Вялов Г.В.  *
  *  Дата:       01.10.2024  *
  *  Название:   Лаба №3     *
  ***************************/
 #include <iostream>
-#include <hmath>
+#include <cmath>
 using namespace std;
 
 int main() {
-    double S2[] = { 30, 50, 65, 75, 80 };
+    double S2_values[] = { 30, 50, 65, 75, 80 };
     double Re = 2e4;
     double d = 25.4;
     double S1 = 60;
 
-    for (double S2) {
+    for (double S2 : S2_values) {
         double Sg = d * sqrt(0.25 * pow(S1 / d, 2) + pow(S2 / d, 2));
         double delta = (S1 - d) / (Sg - d);
         double Nu;
